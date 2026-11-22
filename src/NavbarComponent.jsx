@@ -33,50 +33,58 @@ const NavbarComponent = () => {
 
   return (
     <div id="navbar">
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand
-          className="brand-name"
-          href="/Rohit-Patil-Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Open Rohit Patil resume"
-          title="Download Resume"
-        >
-          <img
-            alt="My Profile Photo"
-            src={
-              "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
-            }
-            width="30"
-            style={{ borderRadius: "50%" }}
-            height="30"
-            className="d-inline-block align-top"
-          />{" "}
-          Rohit Patil
-        </Navbar.Brand>
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand
+            className="brand-name"
+            href="/Rohit_Patil_Frontend_Developer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Rohit Patil resume"
+            title="Download Resume"
+          >
+            <img
+              alt="My Profile Photo"
+              src={
+                "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
+              }
+              width="30"
+              style={{ borderRadius: "50%" }}
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
+            Rohit Patil
+          </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="justify-content-center"
-        >
-          <Nav className="p-2 justify-content-center">
-            <Nav.Link className="nav-link-custom" href="#Home">Home</Nav.Link>
-            <Nav.Link className="nav-link-custom" href="#Skills">Skills</Nav.Link>
-            <Nav.Link className="nav-link-custom" href="#Projects">Projects</Nav.Link>
-            <Nav.Link className="nav-link-custom" href="#Contact">Contact</Nav.Link>
-            <div className="d-lg-none">
-              <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-            </div>
-          </Nav>
-        </Navbar.Collapse>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse
+            id="basic-navbar-nav"
+            className="justify-content-center"
+          >
+            <Nav className="p-2 justify-content-center">
+              <Nav.Link className="nav-link-custom" href="#Home">
+                Home
+              </Nav.Link>
+              <Nav.Link className="nav-link-custom" href="#Skills">
+                Skills
+              </Nav.Link>
+              <Nav.Link className="nav-link-custom" href="#Projects">
+                Projects
+              </Nav.Link>
+              <Nav.Link className="nav-link-custom" href="#Contact">
+                Contact
+              </Nav.Link>
+              <div className="d-lg-none">
+                <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+              </div>
+            </Nav>
+          </Navbar.Collapse>
 
-        <div className="d-none d-lg-block">
-          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-        </div>
-      </Container>
-    </Navbar>
+          <div className="d-none d-lg-block">
+            <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+          </div>
+        </Container>
+      </Navbar>
     </div>
   );
 };
